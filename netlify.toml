@@ -1,0 +1,17 @@
+[build]
+  functions = "build/functions"
+  base = ""
+  publish = "build"
+  command = "npm run deploy"
+
+[dev]
+  framework = "#custom"
+  command = "koios dev"
+  targetPort = 8000
+  port = 9000
+  publish = "build"
+  autoLaunch = false
+
+[dev.https]
+  certFile = "cert/localhost-cert.pem"
+  keyFile = "cert/localhost-privkey.pem"

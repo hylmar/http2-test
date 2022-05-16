@@ -1,0 +1,65 @@
+mixin foo
+  div
+    | foo
+    | foo
+    
+mixin bar
+  div
+    | bar
+    | bar
+
+mixin baz
+  div
+    | baz
+    | baz
+
+//- some comment
+
+div
+  | foo
+  div 
+    | faa
+
+html
+  head
+    title my jade template
+  body
+
+//- some comment
+  some indented comment
+  some indented comment
+
+div
+  div
+    | foo
+    | faa
+  div
+    | foo 2
+    | faa 2
+
+mixin bar
+  div
+    | bar 2
+
+    
+    | bar 2
+
+p
+  a(href="",
+title=""
+)
+    | foo
+
+| faa
+
+foo(abc="", def="")
+
+foo(abc,
+    def)
+
+foo(abc
+    ,def)
+foo(abc
+    def)
+  foo(abc
+      def)
